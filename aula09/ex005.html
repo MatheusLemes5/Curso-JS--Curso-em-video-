@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt;
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p id="segundo-paragrafo">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="mensagem">Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementById('segundo-paragrafo')
+        var msg = window.document.getElementById('mensagem');
+        //var msg_2 = window.document.querySelector('div#mensagem'); Pega o elemento por Seletor
+        //window.document.write(p1.innerText + '<br>');
+        //window.document.write(p1.innerHTML); // Pega o texto com toda a formatação
+        // p1.style.color = "yellow"; Muda a cor do p1 para amarelo 
+        corpo.style.background = "black"; // Muda a cor do background para preto
+        msg.innerHTML = 'Aguardando...' // Muda a mensagem desta div 
+        msg.style.background = "orange"; // Muda o fundo desta div 
+        // msg.style.color = 'orange'; Muda a cor da fonte
+    </script>
+</body>
+
+</html>
